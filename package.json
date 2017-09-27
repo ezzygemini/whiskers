@@ -1,0 +1,29 @@
+{
+  "name": "whiskers",
+  "description": "A tinder-like app to rate spirits.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Moises Romero",
+    "url": "http://dischillers.com",
+    "email": "mromero2@atlassian.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezzygemini/whiskers.git"
+  },
+  "scripts": {
+    "start": "node ./src/localhost.js",
+    "start-dev": "LOG_LEVEL=debug ENVIRONMENT=development node $NODE_DEBUG_OPTION ./src/localhost.js",
+    "test": "node node_modules/ezzy-testing"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ezzy-testing": "^0.1.22"
+  },
+  "dependencies": {
+    "ezzy-argument": "^0.1.18",
+    "ezzy-express-mvc": "^0.4.12",
+    "ezzy-logger": "^0.1.22",
+    "request": "^2.83.0"
+  }
+}

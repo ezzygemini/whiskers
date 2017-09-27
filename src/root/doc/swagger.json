@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Whiskers API",
+    "description": "Restful api for rating spirits.",
+    "contact": {
+      "name": "Moises Romero",
+      "url": "http://dischillers.com/",
+      "email": "mromero2@atlassian.com"
+    }
+  },
+  "host": "localhost:1933",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "security": [
+    {
+      "ApiToken": []
+    }
+  ],
+  "paths": {
+    "/suggestion/{word}": {
+      "get": {
+        "summary": "",
+        "operationId": "",
+        "parameters": [
+          {
+            "name": "word",
+            "in": "path",
+            "type": "string",
+            "description": "The suggestion description"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The suggestions for the spirit."
+          },
+          "500": {
+            "description": "A server error occurred."
+          }
+        }
+      }
+    }
+  }
+}
