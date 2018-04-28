@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "ezzy-argument": "^0.1.18",
-    "ezzy-express-mvc": "^0.4.12",
-    "ezzy-logger": "^0.1.22",
+    "ezzy-express-mvc": "^1.0.1",
+    "ezzy-logger": "^1.0.0",
     "request": "^2.83.0"
   }
 }
